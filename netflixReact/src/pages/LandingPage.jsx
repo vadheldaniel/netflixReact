@@ -1,20 +1,18 @@
 import logo from "../assets/logo.svg";
-import CurveDiv from "../component/CurveDiv";
+import FooterList from "../component/FooterList";
 import Inputfirst from "../component/Inputfirst";
+import Questions from "../component/Quetions";
 import ReasonCard from "../component/ReasonCard";
 import SelectOption from "../component/SelectOption";
 import SliderBox from "../component/SliderBox";
-import pclogo from "../assets/pclogo.svg"
-
 
 function LandingPage() {
   const dynamicImageUrl = `https://assets.nflxext.com/ffe/siteui/vlv3/4690cab8-243a-4552-baef-1fb415632f74/web/IN-en-20241118-TRIFECTA-perspective_0b813abc-8365-4a43-a9d8-14c06e84c9f3_large.jpg`;
 
-
   return (
     <>
       <div
-        className="h-[795px] relative"
+        className="h-[760px]  relative"
         style={{ backgroundImage: `url(${dynamicImageUrl})` }}
       >
         <div className="bg-[radial-gradient(circle,_rgba(0,0,0,0)_-30%,_rgba(0,0,0,0.8)_80%)] absolute h-full w-full top-0  "></div>
@@ -66,8 +64,10 @@ function LandingPage() {
         </div>
       </div>
       {/* curve divs */}
-      <CurveDiv />
-      <div className="tranding  font-semibold bg-black  px-36 absolute bottom-[-150px] z-[1] w-full">
+      <div className="h-24  text-white w-full curvey relative bottom-[65px] bg-red-500 ">
+        <div className="curve h-24 "></div>
+      </div>
+      <div className="tranding  font-semibold h-[100px] px-36 relative bottom-[120px] z-[1] w-full">
         <h2 className=" text-white text-2xl mb-2 ml-3">Trending Now</h2>
         <SelectOption
           options={{ opt1: "india", opt2: "global" }}
@@ -79,23 +79,32 @@ function LandingPage() {
         />
       </div>
 
-
-      <SliderBox/>
-      <div className="reason px-36 bg-black text-white text-2xl font-semibold">
+      <SliderBox />
+      <div className="reason xl:px-36 px-[60px] bg-black text-white text-2xl font-semibold relative bottom-[170px]">
         <h1>More reasons to join</h1>
-        <div className="cards flex items-center gap-4 p-4">
-            <ReasonCard/>
-            <ReasonCard/>
-            <ReasonCard/>
-            <ReasonCard/>
+        <div className="cards flex items-center gap-2 p-4 flex-wrap box-border justify-center">
+          <ReasonCard />
+          <ReasonCard />
+          <ReasonCard />
+          <ReasonCard />
         </div>
       </div>
 
-      <div className="quitions">
+      <div className="relative bottom-[170px] bg-black px-36">
+       <Questions/>
+        <div className="py-20 text-white text-center">
+        <Inputfirst/>
+        </div>
 
+          <footer className="text-slate-300">
+             <p className="text-xl font-semibold">Questions? Call 000-800-919-1694</p>
+             <FooterList/>
 
+             <div className="text-center text-xl font-semibold text-red-600 h-[300px] flex 
+ flex-col justify-center
+">madeByMe&#x2665;&#xfe0f;</div>
+          </footer>
       </div>
-
     </>
   );
 }

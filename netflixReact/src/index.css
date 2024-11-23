@@ -11,8 +11,6 @@
 	.curvey{
 		box-sizing: border-box;
     overflow: hidden;
-    position: absolute;
-    bottom: -100px;
 		border-top-left-radius: 71% 100%;
 		border-top-right-radius: 71% 100%;
 		border: solid .25rem transparent;
@@ -23,3 +21,4 @@
 		display: none;
 	}
 }
+
