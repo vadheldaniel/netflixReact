@@ -1,8 +1,10 @@
 import logo from "../assets/logo.svg";
 import CurveDiv from "../component/CurveDiv";
 import Inputfirst from "../component/Inputfirst";
+import ReasonCard from "../component/ReasonCard";
 import SelectOption from "../component/SelectOption";
 import SliderBox from "../component/SliderBox";
+import pclogo from "../assets/pclogo.svg"
 
 
 function LandingPage() {
@@ -65,7 +67,7 @@ function LandingPage() {
       </div>
       {/* curve divs */}
       <CurveDiv />
-      <div className="tranding  font-semibold bg-black  px-48 absolute bottom-[-150px] w-full py-4">
+      <div className="tranding  font-semibold bg-black  px-36 absolute bottom-[-150px] z-[1] w-full">
         <h2 className=" text-white text-2xl mb-2 ml-3">Trending Now</h2>
         <SelectOption
           options={{ opt1: "india", opt2: "global" }}
@@ -76,7 +78,24 @@ function LandingPage() {
           atribute={{ name: "generes", id: "generes" }}
         />
       </div>
+
+
       <SliderBox/>
+      <div className="reason px-36 bg-black text-white text-2xl font-semibold">
+        <h1>More reasons to join</h1>
+        <div className="cards flex items-center gap-4 p-4">
+            <ReasonCard/>
+            <ReasonCard/>
+            <ReasonCard/>
+            <ReasonCard/>
+        </div>
+      </div>
+
+      <div className="quitions">
+
+
+      </div>
+
     </>
   );
 }
