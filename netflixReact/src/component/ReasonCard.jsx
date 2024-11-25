@@ -1,5 +1,4 @@
-
-import pclogo from '../assets/pclogo.svg'
+import React from 'react';
 
 function ReasonCard({item}){
 

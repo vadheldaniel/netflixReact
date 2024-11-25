@@ -4,21 +4,47 @@
 
 @layer utilities {
   .curve {
-				background-color: aqua;
-				
-			 background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
-  }
-	.curvey{
-		box-sizing: border-box;
-    overflow: hidden;
-		border-top-left-radius: 71% 100%;
-		border-top-right-radius: 71% 100%;
-		border: solid .25rem transparent;
-		background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
-	}
-	/* Hide scrollbar for Chrome, Safari and Opera */
-	.no-scrollbar::-webkit-scrollbar {
-		display: none;
-	}
-}
+    background-color: aqua;
 
+    background: radial-gradient(
+        50% 500% at 50% -420%,
+        rgba(64, 97, 231, 0.4) 80%,
+        rgba(0, 0, 0, 0.1) 100%
+      ),
+      black;
+  }
+  .curvey {
+    box-sizing: border-box;
+    overflow: hidden;
+    border-top-left-radius: 71% 100%;
+    border-top-right-radius: 71% 100%;
+    border: solid 0.25rem transparent;
+    background: linear-gradient(
+      to right,
+      rgba(33, 13, 22, 1) 16%,
+      rgba(184, 40, 105, 1),
+      rgba(229, 9, 20, 1),
+      rgba(184, 40, 105, 1),
+      rgba(33, 13, 22, 1) 84%
+    );
+  }
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .first-grade {
+    background: radial-gradient(
+      92.16% 100% at 49.87% 0%,
+      rgba(247, 99, 107, 0.3) 19.86%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+  .second-grade {
+    background: radial-gradient(
+      50% 100% at 50% 0%,
+      rgba(44, 66, 156, 0.15) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+}

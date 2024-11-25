@@ -1,10 +1,12 @@
 import LandingPage from "./pages/LandingPage"
+import MordernLanding from "./pages/MordernLanding"
 
 function App() {
-
+ 
+  const landing=false;
   return (
     <>
-       <LandingPage/>   
+       {landing?<LandingPage/>:<MordernLanding/> }  
     </>
   )
 }

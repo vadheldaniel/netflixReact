@@ -29,22 +29,22 @@ const featuresData = [
   {
     title: "Enjoy on your TV",
     description: "Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.",
-    imageSrc: "C:\Users\vadhl\OneDrive\Desktop\netflix react\netflixReact\src\assets\pclogo.svg"
+    imageSrc: "src/assets/pclogo.svg"
   },
   {
     title: "Download your shows to watch offline",
     description: "Save your favourites easily and always have something to watch.",
-    imageSrc: ""
+    imageSrc: "src/assets/downloadsvg.svg"
   },
   {
     title: "Watch everywhere",
     description: "Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.",
-    imageSrc: ""
+    imageSrc: "src/assets/smile.svg"
   },
   {
     title: "Create profiles for kids",
     description: "Send kids on adventures with their favourite characters in a space made just for them — free with your membership.",
-    imageSrc: ""
+    imageSrc: "src/assets/celebretion.svg"
   }
 ];
 
