@@ -20,7 +20,7 @@ function FooterList() {
 
 
   return (
-    <div className="grid grid-cols-4 gap-3 mt-6">
+    <div className="grid md:grid-cols-4 gap-3 mt-6 grid-cols-2">
       {list.map((item)=><li className="list-none">
         <a href="">{item}</a>
       </li>)}

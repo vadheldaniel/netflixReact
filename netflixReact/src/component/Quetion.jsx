@@ -1,19 +1,30 @@
+import { useRef, useState } from "react";
+import faqData from "../store/faqData";
+function Question({ question }) {
+  const [toggle, setToggle] = useState(true);
 
-function Question(){
-	return(
-		<div className="mt-2 text-white h-[65px] overflow-hidden">
-		<div className="px-5 py-4 bg-[#313131] w-full hover:bg-[#414141]">
-			<p className="inline-block text-xl ">What is Netflix?</p>
-			<button className="float-right">+</button>
-		</div>
-		<div className="ans pt-9 text-lg bg-[#313131] mt-[2px] p-5">
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-			alias rerum neque eius quibusdam minus, aliquid culpa
-			exercitationem quasi voluptatibus, dolor architecto dolorem, ea
-			reiciendis odit officia voluptates suscipit sunt.
-		</div>
-	</div>
-	)
+  return (
+    <div className="mt-2 text-white max-h-96">
+      <div className="px-5 py-4 bg-[#313131] w-full hover:bg-[#414141]">
+        <p className="inline-block text-xl">{question.question}</p>
+        <button
+          className="float-right"
+          onClick={() => {
+            setToggle((prev) => !prev);
+          }}
+        >
+          {toggle ? "+" : "x"}
+        </button>
+      </div>
+      <div
+        className={`ans  text-lg bg-[#313131] mt-[2px]  overflow-hidden transition-[max-height] duration-500 ease-in-out ${
+          toggle ? "max-h-0 opacity-0" : "max-h-fit p-5 opacity-100"
+        }`}
+      >
+        {question.answer}
+      </div>
+    </div>
+  );
 }
 
 export default Question;
