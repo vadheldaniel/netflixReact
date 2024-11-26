@@ -17,6 +17,16 @@ module.exports = {
       backgroundImage: {
         'heropattern': "url('https://assets.nflxext.com/ffe/siteui/vlv3/dadb130d-463b-4e5b-b335-038ed912059e/web_tall_panel/IN-en-20241118-TRIFECTA-perspective_19bdd42f-315f-4636-b5fb-3cabd8eb471c_large.jpg')",
       },
+
+      keyframes: {
+        slide: {
+          "0%": { transform: "translateX(0px)" },
+          "100%": { transform: "translateX(-76%)" },
+        },
+      },
+      animation: {
+        slide: "slide 120s linear infinite",
+      },
     },
   },
   plugins: [],

@@ -47,4 +47,40 @@
       rgba(0, 0, 0, 0) 100%
     );
   }
+  .header-grade {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.7889) 8.333%,
+      rgba(0, 0, 0, 0.7556) 16.67%,
+      rgba(0, 0, 0, 0.7) 25%,
+      rgba(0, 0, 0, 0.6222) 33.33%,
+      rgba(0, 0, 0, 0.5222) 41.67%,
+      rgba(0, 0, 0, 0.4) 50%,
+      rgba(0, 0, 0, 0.2778) 58.33%,
+      rgba(0, 0, 0, 0.1778) 66.67%,
+      rgba(0, 0, 0, 0.1) 75%,
+      rgba(0, 0, 0, 0.04444) 83.33%,
+      rgba(0, 0, 0, 0.01111) 91.67%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    
+  }
+  .image-grade {
+    background: linear-gradient(
+      360deg,
+      rgba(0, 0, 0, 0.9) 31.45%,
+      rgba(0, 0, 0, 0.4) 82.5%
+    );
+  }
+  .image-mask{
+    mask-image: radial-gradient(103% 11% at 50% 102%, transparent 50%, white 51%);
+  }
+  .border-grade{
+    background: radial-gradient(at top left, white 25%, transparent 70%);
+  }
+  .bottom-grade{
+    background: 
+      linear-gradient(8deg, #d49999,12%, transparent)
+  }
 }
