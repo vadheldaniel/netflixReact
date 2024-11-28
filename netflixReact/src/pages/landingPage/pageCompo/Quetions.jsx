@@ -1,5 +1,5 @@
 import Question from "./Quetion";
-import faqData from "../store/faqData";
+import faqData from "../../../store/faqData";
 
 function Questions() {
   return (

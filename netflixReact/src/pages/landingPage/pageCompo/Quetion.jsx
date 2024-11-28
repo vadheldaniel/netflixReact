@@ -1,6 +1,10 @@
 import { useRef, useState } from "react";
-import faqData from "../store/faqData";
+
+
+
+
 function Question({ question }) {
+
   const [toggle, setToggle] = useState(true);
 
   return (

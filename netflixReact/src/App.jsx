@@ -1,5 +1,6 @@
-import LandingPage from "./pages/LandingPage"
-import MordernLanding from "./pages/MordernLanding"
+import LandingPage from "./pages/landingPage/LandingPage";
+import MordernLanding from "./pages/landingPage/MordernLanding";
+
 
 function App() {
  

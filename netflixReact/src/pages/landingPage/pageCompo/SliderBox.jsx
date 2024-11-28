@@ -2,7 +2,7 @@ import { useRef } from "react";
 import SliderImg from "./SliderImg";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
-import useFetch from "../hooks/useFetch";
+import useFetch from "../../../hooks/useFetch";
 
 function SliderBox({ movies }) {
   const scrollby = useRef();

@@ -83,4 +83,21 @@
     background: 
       linear-gradient(8deg, #d49999,12%, transparent)
   }
+
+  .ans {
+    overflow: hidden; 
+    transition: max-height 0.2s ease, padding 0.3s ease; 
+  }
+  
+  .ans.open {
+    max-height: 500px; 
+    padding: 1rem; 
+  }
+  
+  .ans.closed {
+    max-height: 0; 
+    padding: 0; 
+  }
+
+
 }

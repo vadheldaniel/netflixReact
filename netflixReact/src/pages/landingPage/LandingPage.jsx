@@ -1,18 +1,17 @@
-import { useRef, useState } from "react";
-import logo from "../assets/logo.svg";
-import FooterList from "../component/FooterList";
-import Inputfirst from "../component/Inputfirst";
-import Questions from "../component/Quetions";
-import ReasonCard from "../component/ReasonCard";
-import SelectOption from "../component/SelectOption";
-import SliderBox from "../component/SliderBox";
-import { featuresData } from "../store/faqData";
+import {  useState } from "react";
+import FooterList from "./pageCompo/FooterList";
+import Inputfirst from "./pageCompo/Inputfirst";
+import Questions from "./pageCompo/Quetions";
+import ReasonCard from "./pageCompo/ReasonCard";
+import SelectOption from "./pageCompo/SelectOption";
+import SliderBox from "./pageCompo/SliderBox";
+import { featuresData } from "../../store/faqData";
+
 
 function LandingPage() {
   const dynamicImageUrl = `https://assets.nflxext.com/ffe/siteui/vlv3/4690cab8-243a-4552-baef-1fb415632f74/web/IN-en-20241118-TRIFECTA-perspective_0b813abc-8365-4a43-a9d8-14c06e84c9f3_large.jpg`;
 
   const [movies, setMovies] = useState(true);
-  console.log(movies);
 
   return (
     <>
@@ -23,7 +22,7 @@ function LandingPage() {
         <div className="bg-[radial-gradient(circle,_rgba(0,0,0,0)_-30%,_rgba(0,0,0,0.8)_80%)] absolute h-full w-full top-0  "></div>
         <header className="header relative">
           <img
-            src={logo}
+            src='src/assets/logo.svg'
             alt=""
             className="sm:w-28 sm:h-20 absolute sm:top-2 lg:left-32  left-8 z-[1] w-20 top-6"
           />
@@ -64,7 +63,7 @@ function LandingPage() {
             Starts at ₹149. Cancel at any time.
           </h2>
           <div className="input mt-9">
-            <Inputfirst />
+            <Inputfirst/>
           </div>
         </div>
       </div>
@@ -97,23 +96,23 @@ function LandingPage() {
       </div>
 
       <div className="relative bottom-[170px] bg-black md:px-36 px-[60px] ">
-        <Questions />
+        <Questions/>
         <div className="py-20 text-white text-center">
-          <Inputfirst />
+          <Inputfirst/>
         </div>
 
         <footer className="text-slate-300">
           <p className="text-xl font-semibold">
             Questions? Call 000-800-919-1694
           </p>
-          <FooterList />
+          <FooterList/>
 
           <div
             className="text-center text-xl font-semibold text-red-600 h-[300px] flex 
  flex-col justify-center
 "
           >
-            madeByMe&#x2665;&#xfe0f;
+            madeByMe&#x2665;&#xfe0f~;
           </div>
         </footer>
       </div>
